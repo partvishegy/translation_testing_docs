@@ -1,0 +1,34 @@
+site_name: BC Translation Evaluator
+
+plugins:
+
+- mkdocstrings:
+    handlers:
+      python:
+        options:
+          docstring_style: google  # Or "numpy" or "restructured"
+          show_root_full_docstring: true
+          show_source: true
+          show_signature: true
+- search
+
+
+nav:
+- Home: index.md
+- Entry Points:
+  - Create Dataset: create_dataset.md
+  - Run Experiment: run_experiment.md
+- Config templates:
+  - run_experiment config template: run_experiment_config_template.md
+  - create_dataset config template: create_dataset_config_template.md
+- Modules:
+  - Evaluators: evaluators.md
+  - Validators: validators.md
+  - Helpers: helper.md
+
+
+
+
+theme: readthedocs
+
+
